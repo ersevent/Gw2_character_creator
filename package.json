@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\" ",
+    "client": "cd frontend && npm start",
+    "server": "cd backend && npm start",
+    "client:install": "cd frontend && npm install",
+    "server:install": "cd backend && npm install",
+    "start": "concurrently \"npm run client\" \"npm run server\"",
+    "install": "concurrently \"npm run client:install\" \"npm run server:install\""
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "concurrently": "^5.3.0",
+    "cookie-parser": "^1.4.5",
+    "csurf": "^1.11.0",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.2",
+    "react-router-dom": "^5.2.0",
+    "validator": "^13.5.2"
+  }
+}
